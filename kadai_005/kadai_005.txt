@@ -1,11 +1,4 @@
-nishijima@Mac: ~/Documents/DX研修 
-$ mkdjr git_challenge
-zsh: command not found: mkdjr
-nishijima@Mac: ~/Documents/DX研修 
-$ mkdir git_challenge
-nishijima@Mac: ~/Documents/DX研修 
-$ cd git_challenge
-nishijima@Mac: ~/Documents/DX研修/git_challenge 
+nishijima@HALMacBook-Air: ~/Documents/DX研修/課題用/Git_challenge 
 $ git init
 hint: Using 'master' as the name for the initial branch. This default branch name
 hint: is subject to change. To configure the initial branch name to use in all
@@ -17,78 +10,27 @@ hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
 hint: 'development'. The just-created branch can be renamed via this command:
 hint:
 hint:   git branch -m <name>
-Initialized empty Git repository in /Users/nishijima/Documents/DX研修/git_challenge/.git/
-nishijima@Mac: ~/Documents/DX研修/git_challenge (master #%)
+Initialized empty Git repository in /Users/nishijima/Documents/DX研修/課題用/Git_challenge/.git/
+nishijima@HALMacBook-Air: ~/Documents/DX研修/課題用/Git_challenge (master #)
+$ mkdir git_challenge
+nishijima@HALMacBook-Air: ~/Documents/DX研修/課題用/Git_challenge (master #)
+$ cd git_challenge
+nishijima@HALMacBook-Air: ~/Documents/DX研修/課題用/Git_challenge/git_challenge (master #)
 $ git add hello_world.txt
-nishijima@Mac: ~/Documents/DX研修/git_challenge (master +)
+nishijima@HALMacBook-Air: ~/Documents/DX研修/課題用/Git_challenge/git_challenge (master +)
 $ git commit -m"hello_world.txtを追加"
-[master (root-commit) 2249328] hello_world.txtを追加
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 hello_world.txt
-nishijima@Mac: ~/Documents/DX研修/git_challenge (master)
+[master (root-commit) 68908ef] hello_world.txtを追加
+ 1 file changed, 2 insertions(+)
+ create mode 100644 git_challenge/hello_world.txt
+nishijima@HALMacBook-Air: ~/Documents/DX研修/課題用/Git_challenge/git_challenge (master)
+$ git add hello_world.txt
+nishijima@HALMacBook-Air: ~/Documents/DX研修/課題用/Git_challenge/git_challenge (master +)
 $ git commit -m"日本語訳を追記"
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   hello_world.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-nishijima@Mac: ~/Documents/DX研修/git_challenge (master *)
-$ git commit -m"日本語訳を追記"
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   hello_world.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-nishijima@Mac: ~/Documents/DX研修/git_challenge (master *)
-$ git status
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   hello_world.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-nishijima@Mac: ~/Documents/DX研修/git_challenge (master *)
-$ git log
-commit 2249328a63fc63f7a496e8a6ec93d0f826672812 (HEAD -> master)
-Author: HAL-27 <halnishi65@gmail.com>
-Date:   Tue Jun 17 00:35:57 2025 +0900
-
-    hello_world.txtを追加
-nishijima@Mac: ~/Documents/DX研修/git_challenge (master *)
-$ tree
-zsh: command not found: tree
-nishijima@Mac: ~/Documents/DX研修/git_challenge (master *)
-$ git tree
-*        2249328  2025/06/17 00:35:57   HAL-27  hello_world.txtを追加  (HEAD -> master)
-nishijima@Mac: ~/Documents/DX研修/git_challenge (master *)
-$ git commit -m"日本語訳を追加"
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   hello_world.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-nishijima@Mac: ~/Documents/DX研修/git_challenge (master *)
-$ git tree
-*        adc9fd3  2025/06/17 00:42:13   HAL-27  日本語訳を追加  (HEAD -> master)
-*        2249328  2025/06/17 00:35:57   HAL-27  hello_world.txtを追加 
-nishijima@Mac: ~/Documents/DX研修/git_challenge (master)
-$ git log
-commit adc9fd3539a302e1789f636749f7305db5c8e264 (HEAD -> master)
-Author: HAL-27 <halnishi65@gmail.com>
-Date:   Tue Jun 17 00:42:13 2025 +0900
-
-    日本語訳を追加
-
-commit 2249328a63fc63f7a496e8a6ec93d0f826672812
-Author: HAL-27 <halnishi65@gmail.com>
-Date:   Tue Jun 17 00:35:57 2025 +0900
-
-    hello_world.txtを追加
-nishijima@Mac: ~/Documents/DX研修/git_challenge (master)
+[master 410b650] 日本語訳を追記
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+nishijima@HALMacBook-Air: ~/Documents/DX研修/課題用/Git_challenge/git_challenge (master)
+$ git log --oneline
+410b650 (HEAD -> master) 日本語訳を追記
+68908ef hello_world.txtを追加
+nishijima@HALMacBook-Air: ~/Documents/DX研修/課題用/Git_challenge/git_challenge (master)
+$ 
